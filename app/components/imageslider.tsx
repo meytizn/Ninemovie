@@ -14,15 +14,15 @@ import 'swiper/css/scrollbar';
 
 
 
-export default function Slider() {
+export default function ImageSlider() {
   return (
     <>
     
-<Swiper
+<Swiper watchSlidesProgress={false}
          spaceBetween={30}
          centeredSlides={true}
          autoplay={{
-           delay: 1000,
+           delay: 2500,
            disableOnInteraction: false,
          }}
          pagination={{
@@ -36,10 +36,10 @@ export default function Slider() {
           // onSlideChange={() => console.log('slide change')}
 
     >
-      <SwiperSlide><img src="images/1.jpg" className="w-[100%] md:w-[50%] md:m-auto bg-black h-[100vh]"/></SwiperSlide>
-      <SwiperSlide><img src="images/2.jpg" className="w-[100%] md:w-[50%] md:m-auto h-[100vh]"/></SwiperSlide>
-      <SwiperSlide><img src="images/3.jpg" className="w-[100%] md:w-[50%] md:m-auto h-[100vh]"/></SwiperSlide>
-      <SwiperSlide><img src="images/1.jpg" className="w-[100%] md:w-[50%] md:m-auto h-[100vh]"/></SwiperSlide>
+      <SwiperSlide><img src="images/1.jpg" className="w-[100%] md:w-[100%] md:m-auto bg-black h-[100vh]"/></SwiperSlide>
+      <SwiperSlide><img src="images/2.jpg" className="w-[100%] md:w-[100%] md:m-auto h-[100vh]"/></SwiperSlide>
+      <SwiperSlide><img src="images/3.jpg" className="w-[100%] md:w-[100%] md:m-auto h-[100vh]"/></SwiperSlide>
+      <SwiperSlide><img src="images/1.jpg" className="w-[100%] md:w-[100%] md:m-auto h-[100vh]"/></SwiperSlide>
    
     </Swiper>
 

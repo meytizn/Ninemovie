@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
+import ImageSlider from './components/imageslider'
+import MovieSlider_component from './components/movieslider_component'
 
 export default function Home() {
   return (
@@ -35,16 +37,31 @@ end imageslider section */}
 
 
 
-
-
+{/* 
+imageslider */}
 
 
 <div id="contenter" className=" flex flex-row justify-center w-[100%] h-[136px] md:h-[530px] bg-red-500 gap-x-3 mt-1">
 
 <div id="row1" className="flex flex-row w-[26%] md:h-[530px] text-white text-[25px] bg-green-500 ">مووی کو </div>
-<div id="row1" className="flex flex-row w-[55%] md:h-[530px] text-white text-[25px] bg-pink-500 ">مووی کو </div>
+
+
+
+<div id="row1" className="flex flex-row w-[55%] md:h-[530px] text-white text-[25px] bg-pink-500 ">
+  
+  <ImageSlider/>
+  
+   </div>
       
 </div>
+
+
+
+{/* 
+end imageslider */}
+
+
+
 
 
 
@@ -59,12 +76,7 @@ movie section */}
 
 <div id="movielist master container" className="flex flex-row gap-y-2 flex-wrap justify-between w-[90%]  text-white text-[25px] bg-green-500 "> 
 
-<div id="item1" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
-<div id="item2" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
-<div id="item3" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
-<div id="item4" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
-<div id="item5" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
-<div id="item6" className="flex flex-row w-[220px] md:h-[430px] text-white text-[25px] bg-black "> 1</div>
+<MovieSlider_component/>
 
 
 
